@@ -7,37 +7,9 @@ import java.util.Scanner;
 public class Registro {
     public static void main(String[] args) {
         String [][] registro = new String[50][3];
-        int a = -1;
 
         ejecutarMenu(registro);
 
-    }
-
-
-
-
-    public static int obtenerUltimoEspacio(String [][] registro) {
-        return registro.length - opa(registro);
-    }
-
-
-
-
-    public static boolean hayCupo(String [][] registro) {
-        return opa(registro) != 0;
-    }
-
-
-
-
-    public static int opa(String [][] registro) {
-        for(int i = 0; i < registro.length; i++) {
-            if(registro[i][0].equals("")){
-                return registro.length - i;
-            }
-        }
-
-        return 0;
     }
 
     public static void mostrarMenu(){
@@ -54,12 +26,12 @@ public class Registro {
     }
 
     public static void ejecutarMenu(String [][] registro) {
-        int opcion;
-        do {
+        int opcion = 0;
+        while(opcion != 6) {
             mostrarMenu();
             opcion = leerOpcion();
             ejecutarOpcion(opcion, registro);
-        } while (opcion > 0 || opcion < 6);
+        }
     }
 
     public static int leerOpcion() {
@@ -92,19 +64,19 @@ public class Registro {
     public static void ejecutarOpcion(int opcion, String[][] registro) {
         switch (opcion) {
             case 1:
-                agregarPersona();
+                //agregarPersona(registro,nombre, estadocivil, edad);
                 break;
             case 2:
-                personasMayoresEdad();
+                //personasMayoresEdad();
                 break;
             case 3:
-                personasMenoresEdad();
+                //personasMenoresEdad();
                 break;
             case 4:
-                personasTerceraEdad();
+                //personasTerceraEdad();
                 break;
             case 5:
-                personasSegunEstadoCivil();
+                //personasSegunEstadoCivil();
                 break;
             case 6:
                 System.out.println("Saliendo del programa...");
@@ -113,4 +85,70 @@ public class Registro {
                 System.out.println("Opcion no valida.");
         }
     }
+
+    public static String[][] agregarPersona(String[][] registro, String nombre, String estadocivil, int edad) {
+        if (hayCupo(registro)) {
+            int filaVacia = obtenerUltimoEspacio(registro);
+            registro[filaVacia][0] = nombre;
+            registro[filaVacia][1] = estadocivil;
+            registro[filaVacia][2] = String.valueOf(edad);
+            System.out.println("Persona agregada.");
+            return registro;
+        } else {
+            System.out.println("No hay cupo.");
+            return registro;
+        }
+    }
+
+
+
+
+    public static int obtenerUltimoEspacio(String [][] registro) {
+        for (int i = 0; i < registro.length; i++) {
+            if (registro[i][0] == null) {
+                return i;
+            }
+        }
+        return registro.length;
+    }
+
+
+
+
+    public static boolean hayCupo(String [][] registro) {
+        return registro.length - obtenerUltimoEspacio(registro) > 0;
+    }
+
+    public static int stringAInt(String numeroString){
+        int numeroEntero;
+        try{
+            numeroEntero = Integer.parseInt(numeroString);
+        } catch (NumberFormatException e) {
+            numeroEntero = -1;
+        }
+        return numeroEntero;
+    }
+
+    public static int personasMayoresEdad(String[][] registro) {
+        int personasMayores = 0;
+        for (int i = 0; i < registro.length; i++) {
+            if (stringAInt(registro[i][2]) > 17 ) {
+                personasMayores++;
+            }
+        }
+        return personasMayores;
+    }
+
+    public static int personasMenoresEdad(String[][] registro) {
+        int personasMenores = 0;
+        for (int i = 0; i < registro.length; i++) {
+            if (registro[i][0] == null) {
+                i = registro.length-1;
+            }else if (stringAInt(registro[i][2]) < 18 ) {
+                personasMenores++;
+            }
+        }
+        return personasMenores;
+    }
 }
+
