@@ -1,4 +1,3 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
@@ -68,16 +67,18 @@ public class Registro {
                 String estadoCivil = leerCadena("Ingrese el estado civil: ");
                 int edad = stringAInt(leerCadena("Ingrese la edad: "));
                 if (edad<0){
-                    System.out.print("Edad Invalida.");
+                    System.out.println("Edad Invalida.");
                     break;
                 }
                 agregarPersona(registro,nombre, estadoCivil, edad);
                 break;
             case 2:
                 personasMayoresEdad(registro);
+                System.out.println("Hay "+personasMayoresEdad(registro)+" personas mayores de edad.");
                 break;
             case 3:
                 personasMenoresEdad(registro);
+                System.out.println("Hay "+personasMenoresEdad(registro)+" personas menores de edad.");
                 break;
             case 4:
                 //personasTerceraEdad();
