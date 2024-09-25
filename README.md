@@ -13,3 +13,14 @@ Las tareas presentadas son en un formato general y a medida que se avanza en la 
 - Correccion de errores logicos | Benjamín Garces, Francisco Lizama
 - Pruebas con JUnit | Benjamín Garces, Francisco Lizama
 - Agregar metodos faltantes | Francisco Lizama
+
+### Metodos Agregados y sus Tests:
+El menu y su logica fue desarrollado por Benjamín Garces
+
+Eliminacion y simplificacion de metodos existentes Francisco Lizama
+
+- agregarPersona() | Francisco Lizama
+- personasMayoresEdad() | Benjamín Garces
+- personasMenoresEdad() | Benjamín Garces
+- personasTerceraEdad() | Francisco Lizama
+- personasSegunEstadoCivil() | Francisco Lizama
