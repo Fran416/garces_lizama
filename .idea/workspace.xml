@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cec5bf55-6145-488b-81e5-abe047524413" name="Changes" comment="Actualizacion README.md">
+    <list default="true" id="cec5bf55-6145-488b-81e5-abe047524413" name="Changes" comment="Test metodo agregarPersona">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Registro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Registro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegistroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegistroTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,13 +18,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lizama" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,8 +54,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Registro.executor": "Run",
+    "JUnit.RegistroTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "lizama",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -65,6 +69,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="TallerEnParejas" />
@@ -114,7 +126,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727264655127</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Metodo para agregar personas al registro (agregarPersonas()) rehecha y reposicionada fuera del metodo main, Funcion hayCupo reparada y obtenerUltimoEspacio reparada">
+      <option name="closed" value="true" />
+      <created>1727267589518</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727267589518</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Test metodo agregarPersona">
+      <option name="closed" value="true" />
+      <created>1727268782637</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727268782637</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +174,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Actualizacion README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualizacion README.md" />
+    <MESSAGE value="Metodo para agregar personas al registro (agregarPersonas()) rehecha y reposicionada fuera del metodo main" />
+    <MESSAGE value="Metodo para agregar personas al registro (agregarPersonas()) rehecha y reposicionada fuera del metodo main, Funcion hayCupo reparada y obtenerUltimoEspacio reparada" />
+    <MESSAGE value="Test metodo agregarPersona" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test metodo agregarPersona" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
