@@ -1,10 +1,11 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class RegistroTest {
-    String[][] registro = new String[10][3];
+    String[][] registro = new String[50][3];
 
     @BeforeEach
     void setUp() {
@@ -39,4 +40,17 @@ class RegistroTest {
         assertEquals(2, Registro.personasSegunEstadoCivil(registro, "Solter@"));
         assertEquals(1, Registro.personasSegunEstadoCivil(registro, "Casad@"));
     }
+
+
+
+    @Test
+    void testPersonasMayores() {
+        assertEquals(3, Registro.personasMayoresEdad(registro));
+    }
+
+    @Test
+    void testPersonasMenores() {
+        assertEquals(0, Registro.personasMenoresEdad(registro));
+    }
+
 }
