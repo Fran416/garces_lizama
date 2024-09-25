@@ -18,7 +18,7 @@ public class Registro {
                 3) Mostrar la cantidad de personas menores de edad.
                 4) Mostrar la cantidad de personas de tercera edad.
                 5) Mostrar la cantidad de personas según estado civil (Soltero/a - Casado/a).
-                6)Salir.
+                6) Salir.
                 """);
         System.out.print("Elija una opcion: ");
     }
@@ -116,6 +116,18 @@ public class Registro {
             if (registro[i][0] == null) {
                 i = registro.length - 1;
             } else if (stringAInt(registro[i][2]) >= 60) {
+                contador++;
+            }
+        }
+        return contador;
+    }
+
+    public static int personasSegunEstadoCivil(String[][] registro, String estadoCivil) {
+        int contador = 0;
+        for (int i = 0; i < registro.length; i++) {
+            if (registro[i][0] == null) {
+                i = registro.length - 1;
+            } else if (registro[i][1] == estadoCivil) {
                 contador++;
             }
         }

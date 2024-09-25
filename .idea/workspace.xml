@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cec5bf55-6145-488b-81e5-abe047524413" name="Changes" comment="Test metodo agregarPersona">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cec5bf55-6145-488b-81e5-abe047524413" name="Changes" comment="Metodo personasTerceraEdad, testeada y funcionando">
       <change beforePath="$PROJECT_DIR$/src/main/java/Registro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Registro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegistroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegistroTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727268782637</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Metodo personasTerceraEdad, testeada y funcionando">
+      <option name="closed" value="true" />
+      <created>1727269244434</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727269244434</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +183,8 @@
     <MESSAGE value="Metodo para agregar personas al registro (agregarPersonas()) rehecha y reposicionada fuera del metodo main" />
     <MESSAGE value="Metodo para agregar personas al registro (agregarPersonas()) rehecha y reposicionada fuera del metodo main, Funcion hayCupo reparada y obtenerUltimoEspacio reparada" />
     <MESSAGE value="Test metodo agregarPersona" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test metodo agregarPersona" />
+    <MESSAGE value="Metodo personasTerceraEdad, testeada y funcionando" />
+    <option name="LAST_COMMIT_MESSAGE" value="Metodo personasTerceraEdad, testeada y funcionando" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -33,4 +33,10 @@ class RegistroTest {
     void personaTerceraEdad() {
         assertEquals(2, Registro.personasTerceraEdad(registro));
     }
+
+    @Test
+    void personaSegunEstadoCivil() {
+        assertEquals(2, Registro.personasSegunEstadoCivil(registro, "Solter@"));
+        assertEquals(1, Registro.personasSegunEstadoCivil(registro, "Casad@"));
+    }
 }
