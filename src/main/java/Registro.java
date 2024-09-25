@@ -6,9 +6,7 @@ import java.util.Scanner;
 public class Registro {
     public static void main(String[] args) {
         String [][] registro = new String[50][3];
-
         ejecutarMenu(registro);
-
     }
 
     public static void mostrarMenu(){
@@ -18,8 +16,8 @@ public class Registro {
                 2) Mostrar la cantidad de personas mayores de edad.
                 3) Mostrar la cantidad de personas menores de edad.
                 4) Mostrar la cantidad de personas de tercera edad.
-                5) Mostrar la cantidad de personas según estado civil (Soltero/a - Casado/a).
-                6)Salir.
+                5) Mostrar la cantidad de personas según estado civil (Solter@ - Casad@).
+                6) Salir.
                 """);
         System.out.print("Elija una opcion: ");
     }
@@ -61,10 +59,11 @@ public class Registro {
     }
 
     public static void ejecutarOpcion(int opcion, String[][] registro) {
+        String estadoCivil;
         switch (opcion) {
             case 1:
                 String nombre = leerCadena("Ingrese el nombre de la persona: ");
-                String estadoCivil = leerCadena("Ingrese el estado civil: ");
+                estadoCivil = leerCadena("Ingrese el estado civil: ");
                 int edad = stringAInt(leerCadena("Ingrese la edad: "));
                 if (edad<0){
                     System.out.println("Edad Invalida.");
@@ -81,10 +80,16 @@ public class Registro {
                 System.out.println("Hay "+personasMenoresEdad(registro)+" personas menores de edad.");
                 break;
             case 4:
-                //personasTerceraEdad();
+                int cantidaPersonasTerceraEdad = personasTerceraEdad(registro);
+                System.out.println("En su registro hay "+ cantidaPersonasTerceraEdad+" personas de la tercera edad" );
                 break;
             case 5:
-                //personasSegunEstadoCivil();
+                estadoCivil = leerCadena("Ingrese el estado Civil de desea contar (Solter@ - Casad@).");
+                if (estadoCivil == "Solte@" || estadoCivil == "Casad@") {
+                    int cantidadPersonas = personasSegunEstadoCivil(registro, estadoCivil);
+                } else {
+                    System.out.println("Error: El estado civil no se encuentra entre las opciones existentes");
+                }
                 break;
             case 6:
                 System.out.println("Saliendo del programa...");
@@ -94,6 +99,7 @@ public class Registro {
         }
     }
 
+
     public static String[][] agregarPersona(String[][] registro, String nombre, String estadocivil, int edad) {
         if (hayCupo(registro)) {
             int filaVacia = obtenerUltimoEspacio(registro);
@@ -101,14 +107,11 @@ public class Registro {
             registro[filaVacia][1] = estadocivil;
             registro[filaVacia][2] = String.valueOf(edad);
             System.out.println("Persona agregada.");
-            return registro;
         } else {
             System.out.println("No hay cupo.");
-            return registro;
         }
+        return registro;
     }
-
-
 
 
     public static int obtenerUltimoEspacio(String [][] registro) {
@@ -120,11 +123,32 @@ public class Registro {
         return registro.length;
     }
 
-
-
-
     public static boolean hayCupo(String [][] registro) {
         return registro.length - obtenerUltimoEspacio(registro) > 0;
+    }
+
+    public static int personasTerceraEdad(String[][] registro){
+        int contador = 0;
+        for (int i = 0; i < registro.length; i++) {
+            if (registro[i][0] == null) {
+                i = registro.length - 1;
+            } else if (stringAInt(registro[i][2]) >= 60) {
+                contador++;
+            }
+        }
+        return contador;
+    }
+
+    public static int personasSegunEstadoCivil(String[][] registro, String estadoCivil) {
+        int contador = 0;
+        for (int i = 0; i < registro.length; i++) {
+            if (registro[i][0] == null) {
+                i = registro.length - 1;
+            } else if (registro[i][1] == estadoCivil) {
+                contador++;
+            }
+        }
+        return contador;
     }
 
     public static int stringAInt(String numeroString){
@@ -137,26 +161,28 @@ public class Registro {
         return numeroEntero;
     }
 
-    public static int personasMayoresEdad(String[][] registro) {
-        int personasMayores = 0;
-        for (int i = 0; i < registro.length; i++) {
-            if (stringAInt(registro[i][2]) > 17 ) {
-                personasMayores++;
-            }
-        }
-        return personasMayores;
-    }
 
-    public static int personasMenoresEdad(String[][] registro) {
-        int personasMenores = 0;
-        for (int i = 0; i < registro.length; i++) {
-            if (registro[i][0] == null) {
-                i = registro.length-1;
-            }else if (stringAInt(registro[i][2]) < 18 ) {
-                personasMenores++;
-            }
+
+
+public static int personasMayoresEdad(String[][] registro) {
+    int personasMayores = 0;
+    for (int i = 0; i < registro.length; i++) {
+        if (stringAInt(registro[i][2]) > 17 ) {
+            personasMayores++;
         }
-        return personasMenores;
     }
+    return personasMayores;
 }
 
+public static int personasMenoresEdad(String[][] registro) {
+    int personasMenores = 0;
+    for (int i = 0; i < registro.length; i++) {
+        if (registro[i][0] == null) {
+            i = registro.length-1;
+        }else if (stringAInt(registro[i][2]) < 18 ) {
+            personasMenores++;
+        }
+    }
+    return personasMenores;
+}
+}

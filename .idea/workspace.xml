@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cec5bf55-6145-488b-81e5-abe047524413" name="Changes" comment="Initial Commit" />
+    <list default="true" id="cec5bf55-6145-488b-81e5-abe047524413" name="Changes" comment="Metodo personaSegunEstadoCivil() agregado y testeado" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,32 +14,33 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Fran416"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Fran416&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Fran416/garces_lizama.git",
-    "accountId": "cefe3532-58ab-482b-8663-c1f5ba5262fe"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Fran416/garces_lizama.git&quot;,
+    &quot;accountId&quot;: &quot;cefe3532-58ab-482b-8663-c1f5ba5262fe&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2mYrmoPPtEVXkc4CVWV27hVkEo5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -48,8 +49,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Registro.executor": "Run",
+    "JUnit.RegistroTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "lizama",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -60,6 +65,29 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="TallerEnParejas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="TallerEnParejas" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -94,15 +122,76 @@
       <option name="project" value="LOCAL" />
       <updated>1727264655127</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Metodo para agregar personas al registro (agregarPersonas()) rehecha y reposicionada fuera del metodo main, Funcion hayCupo reparada y obtenerUltimoEspacio reparada">
+      <option name="closed" value="true" />
+      <created>1727267589518</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727267589518</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Test metodo agregarPersona">
+      <option name="closed" value="true" />
+      <created>1727268782637</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727268782637</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Metodo personasTerceraEdad, testeada y funcionando">
+      <option name="closed" value="true" />
+      <created>1727269244434</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727269244434</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Metodo personaSegunEstadoCivil() agregado y testeado">
+      <option name="closed" value="true" />
+      <created>1727269933925</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727269933925</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="lizama" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Actualizacion README.md" />
+    <MESSAGE value="Metodo para agregar personas al registro (agregarPersonas()) rehecha y reposicionada fuera del metodo main" />
+    <MESSAGE value="Metodo para agregar personas al registro (agregarPersonas()) rehecha y reposicionada fuera del metodo main, Funcion hayCupo reparada y obtenerUltimoEspacio reparada" />
+    <MESSAGE value="Test metodo agregarPersona" />
+    <MESSAGE value="Metodo personasTerceraEdad, testeada y funcionando" />
+    <MESSAGE value="Metodo personaSegunEstadoCivil() agregado y testeado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Metodo personaSegunEstadoCivil() agregado y testeado" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
