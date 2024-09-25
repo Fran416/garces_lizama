@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cec5bf55-6145-488b-81e5-abe047524413" name="Changes" comment="Metodo personasTerceraEdad, testeada y funcionando">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Registro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Registro.java" afterDir="false" />
-    </list>
+    <list default="true" id="cec5bf55-6145-488b-81e5-abe047524413" name="Changes" comment="Metodo personaSegunEstadoCivil() agregado y testeado" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727269244434</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Metodo personaSegunEstadoCivil() agregado y testeado">
+      <option name="closed" value="true" />
+      <created>1727269933925</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727269933925</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +190,8 @@
     <MESSAGE value="Metodo para agregar personas al registro (agregarPersonas()) rehecha y reposicionada fuera del metodo main, Funcion hayCupo reparada y obtenerUltimoEspacio reparada" />
     <MESSAGE value="Test metodo agregarPersona" />
     <MESSAGE value="Metodo personasTerceraEdad, testeada y funcionando" />
-    <option name="LAST_COMMIT_MESSAGE" value="Metodo personasTerceraEdad, testeada y funcionando" />
+    <MESSAGE value="Metodo personaSegunEstadoCivil() agregado y testeado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Metodo personaSegunEstadoCivil() agregado y testeado" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

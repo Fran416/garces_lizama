@@ -70,10 +70,16 @@ public class Registro {
                 //personasMenoresEdad();
                 break;
             case 4:
-                //personasTerceraEdad();
+                int cantidaPersonasTerceraEdad = personasTerceraEdad(registro);
+                System.out.println("En su registro hay "+ cantidaPersonasTerceraEdad+" personas de la tercera edad" );
                 break;
             case 5:
-                //personasSegunEstadoCivil();
+                String estadoCivil = leerCadena("Ingrese el estado Civil de desea contar (Solter@ - Casad@).");
+                if (estadoCivil == "Solte@" || estadoCivil == "Casad@") {
+                    int cantidadPersonas = personasSegunEstadoCivil(registro, estadoCivil);
+                } else {
+                    System.out.println("Error: El estado civil no se encuentra entre las opciones existentes");
+                }
                 break;
             case 6:
                 System.out.println("Saliendo del programa...");
