@@ -64,13 +64,20 @@ public class Registro {
     public static void ejecutarOpcion(int opcion, String[][] registro) {
         switch (opcion) {
             case 1:
-                //agregarPersona(registro,nombre, estadocivil, edad);
+                String nombre = leerCadena("Ingrese el nombre de la persona: ");
+                String estadoCivil = leerCadena("Ingrese el estado civil: ");
+                int edad = stringAInt(leerCadena("Ingrese la edad: "));
+                if (edad<0){
+                    System.out.print("Edad Invalida.");
+                    break;
+                }
+                agregarPersona(registro,nombre, estadoCivil, edad);
                 break;
             case 2:
-                //personasMayoresEdad();
+                personasMayoresEdad(registro);
                 break;
             case 3:
-                //personasMenoresEdad();
+                personasMenoresEdad(registro);
                 break;
             case 4:
                 //personasTerceraEdad();
